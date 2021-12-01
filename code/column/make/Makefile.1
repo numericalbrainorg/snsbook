@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -O3 -std=gnu11 -Wall
+
+all: main
+
+main: main.o skel.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+main.o: main.c skel.h
+	$(CC) $(CFLAGS) -c $<
+
+skel.o: skel.c skel.h
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f main *.o
