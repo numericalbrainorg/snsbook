@@ -1,11 +1,9 @@
-# コラム: Makefileを書こう！
+# コラム: よい乱数を使おう！
 
 ## ファイル一覧
-- `main.c`: main関数
-- `skel.c`: 関数定義
-- `skel.h`: 関数定義のヘッダファイル
+- `main_rand.c`: rand()を使っているバージョン
+- `main_sfmt.c`: SFMTで置き換えたバージョン
 - `Makefile`: Makefile
-- `Makefile.1`: サフィックスルールを使っていないMakefile
 - `README-ja.md`: 日本語の説明 (このファイル)
 
 ## 使い方
